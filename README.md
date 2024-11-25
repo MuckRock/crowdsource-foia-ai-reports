@@ -12,10 +12,11 @@ MuckRock crowdsourced the reports using a tool built for our CMS that our team c
 
 For this project, readers were given a form with several questions side-by-side with an unique Chief FOIA Officer report from [a DocumentCloud project containing all Chief FOIA Officer reports](https://www.documentcloud.org/app?q=%2Bproject%3Achief-foia-officer-report-219382%20) submitted to the Attorney General [in 2023](https://www.justice.gov/oip/chief-foia-officer-reports-2023) and [2024](https://www.justice.gov/oip/chief-foia-officer-reports-2024). Our readers reviewed an individual report, recorded the year the report was submitted, the agency that wrote the report and how the agency responded to the question about whether their agency uses machine learning or AI to process FOIA requests. 
 
+### Caveats and limitations 
 Neither the agencies responses nor the reader responses were verified beyond face value. This crowdsource effort is an initial attempt at gathering information and not the final say on how federal agencies are using AI in their FOIA departments. Our plan is to use this first pass to both engage with our readers and provide a starting point to request more documents from federal agencies on their processes that do use machine learning or AI. 
 
 ### `data/manual/hand_annotated_flags.csv`
-MuckRock Data Reporter Dillon Bergin reviewed the crowdsource responses and categorized them into four categories with a corresponding numerical flag:
+The data in `data/manual/hand_annotated_flags.csv` is the same data as `results.csv` with one additional variable called "Flag" to categorize each response. MuckRock Data Reporter Dillon Bergin reviewed the crowdsourced responses and categorized them into four buckets with a corresponding numerical flag:
 - 0 = Agencies that answered no the question
 - 1 = Agencies that answered yes or were ambiguous, but upon review of the text, seemed to reference machine learning e-discovery tools and not new AI initiatives 
 - 2 = Agencies that seemed to mention testing or acquiring AI as part of new AI initiatives 
