@@ -4,8 +4,7 @@ library(here)
 library(readxl)
 
 
-df <- read_csv(here("data", "manual", "hand_annotated_flags.csv")) %>% 
-  inner_join(df_w_flags, by = "id")
+df <- read_csv(here("data", "manual", "hand_annotated_flags.csv"))
 
 # Answers to the AI question, according to [our crowdsourced review](https://www.muckrock.com/news/archives/2024/oct/02/help-us-investigate-how-the-federal-government-uses-ai-for-foia/)
 
